@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.heading {
+    padding: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: #A53860;
+
+
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.game {
+    width: 100vw;
+    height: 100vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #61C9A8;
+    padding: 20px;
+
+
+}
+
+.board {
+    width: 70vh;
+    height: 70vh;
+    table-layout: fixed;
+    border: 3px solid transparent;
+    border-spacing: 5px;
+
+    border-radius: 10px;
+    border-collapse: separate;
+    margin: auto;
+    text-align: center;
+    table-layout: fixed;
+
+}
+
+td {
+
+    height: 23%;
+    width: 23%;
+    border-collapse: separate;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    background-color: beige;
+    overflow: hidden;
+    white-space: nowrap;
+    gap: 1.5vmin;
+
+}
+
+td:hover {
+    transform: translatez(-10px);
+    transform: translatey(-10px);
+    box-shadow: 0 5px 10px blueviolet;
+}
+
+td:active {
+    transform: translateY(-2px) scale(0.95);
+    /* Slight press-down effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Reduces shadow */
+}
