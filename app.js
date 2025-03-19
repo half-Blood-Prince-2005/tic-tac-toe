@@ -1,5 +1,18 @@
 let boxes = document.querySelectorAll(".box")
 
+let button = document.getElementById("restart")
+
+button.addEventListener('click', () => {
+
+    boxes.forEach(box => {
+        let text = box.querySelector('h1');
+        text.textContent = "";
+        box.style.pointerEvents = "auto";
+    })
+    document.querySelector(".heading").textContent = "Tic-Tac-Toe";
+    turnRand = turn[Math.floor(Math.random() * turn.length)];
+
+})
 
 let turn = [true, false];
 
